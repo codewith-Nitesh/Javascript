@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv"></div>
+    <h4 id="demo"></h4>
+    <h4 id="demo1"></h4>
+    <h4 id="demo2"></h4>
+    <h4 id="demo3"></h4>
+</body>
+<script>
+    let element1 = document.querySelector('#myDiv');
+    element1.addEventListener('mousemove',  (event) => {
+     let x = event.clientX
+     let y = event.clientY
+     let coordinates = `X: ${x} + Y: ${y}`;
+     document.querySelector('#demo').textContent = coordinates;
+    });
+
+    element1.addEventListener('mousemove',  (event) => {
+     let a = event.screenX
+     let b = event.screenY
+     let coordinates1 = `X: ${a} + Y: ${b}`
+     document.querySelector('#demo1').textContent = coordinates1;
+});
+
+element1.addEventListener('mousemove',  (event) => {
+     let c = event.pageX
+     let d = event.pageY
+     let coordinates2 = `X: ${c} + Y: ${d}`
+     document.querySelector('#demo2').textContent = coordinates2;
+    });
+
+    element1.addEventListener('mousemove',  (event) => {
+     let e = event.offsetX
+     let f = event.offsetY
+     let coordinates3 = `X: ${e} + Y: ${f}`
+     document.querySelector('#demo3').textContent = coordinates3;
+    });
+
+
+   
+</script>
+</html>

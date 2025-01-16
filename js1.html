@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background-color: black;
+        } */
+        .bg-black{
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 class="heading" id="h1">DOM learning on chai or code <span style="display: none;">hello</span> </h1>
+        <p class="para  heading" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, incidunt.</p> 
+        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, rerum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    </div>
+    <input type="password" name="" id="" title="password">
+    <ul class="back">
+        <li>Green</li>
+        <li>yellow</li>
+        <li>Blue</li>
+    </ul>
+</body>
+<script>
+   let element = document.getElementsByClassName('bg-black')[0]
+   element.style.backgroundColor = 'yellow'
+   element.style.padding = '50px'
+   element.style.borderRadius = '5px'
+   element.style.color = 'black'
+
+  // let element1 = document.querySelectorAll('.heading').style.backgroundColor = 'green'
+
+   let elements = document.querySelectorAll('.heading');
+elements.forEach((el) => {
+    return el.style.backgroundColor = 'green';
+});
+console.log(elements);
+
+console.log(document.getElementsByClassName('heading')[0].style.backgroundColor = 'brown')
+
+console.log(document.querySelector('div p:nth-child(3)').style.backgroundColor = 'blue')
+console.log(document.querySelector('input[type="password"]'))
+
+//console.log(document.querySelector('ul li:nth-child(1)').style.color = 'green')
+//console.log(document.querySelector('ul li:nth-child(2)').style.color = 'yellow')
+//console.log(document.querySelector('ul li:nth-child(3)').style.backgroundColor = 'blue')
+//console.log(document.getElementsByTagName('ul li').style.backgroundColor = 'red')
+console.log(document.querySelector('.back').style.backgroundColor = 'red')
+
+
+</script>
+</html>   
