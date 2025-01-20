@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let element1 = document.createElement('div')
+    element1.appendChild(document.createTextNode('my name is Nitesh'))
+    document.body.appendChild(element1)
+    let element2 = document.createElement('h1')
+    element2.appendChild(document.createTextNode('i am 22 year old'))
+    element1.appendChild(element2)
+     let element3 = document.createElement('h1')
+     element3.appendChild(document.createTextNode('i am 23 year old '))
+     element1.appendChild(element3)
+     element2.replaceWith(element3)
+     element3.replaceWith(element2)
+
+     element2.outerHTML = '<h2>me hu Bhutnika</h2>'
+
+
+</script>
+</html>

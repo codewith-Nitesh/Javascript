@@ -15,5 +15,7 @@ console.log(account_Id)
 
 
 console.table([account_Id, accountEmail,accountPassword,unique_Id,accountState])
+console.table([account_Id, accountEmail,accountPassword,unique_Id,accountState])
 
 console.log('nitesh')
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #yellow{
+             background-color: orange;
+        }
+        #green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <button id="yellow">Yellow</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    //   let changeColor = document.querySelector('#yellow')
+    //   changeColor.addEventListener('click', function(){
+    //     document.body.style.backgroundColor = 'yellow'
+    //   })
+    //   let changeColor1 = document.querySelector('#green')
+    //   changeColor1.addEventListener('click', function(){
+    //     document.body.style.backgroundColor = 'green'
+    //   })
+
+    function clickHandler(color){
+       // document.body.style.backgroundColor = `${color}`
+       return function(){
+        document.body.style.backgroundColor = `${color}`
+       }
+    }
+
+  document.getElementById('yellow').onclick = clickHandler('yellow')
+
+  document.getElementById('green').onclick = clickHandler('green')
+</script>
+</html>

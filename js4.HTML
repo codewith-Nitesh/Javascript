@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai or Code</title>
+</head>
+<body>
+    <ul class="language">
+       <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    let element = document.createElement('li')
+    element.appendChild(document.createTextNode('Golang'))
+    let element1 = document.querySelector('.language')
+    element1.appendChild(element)
+    element.style.color = 'lightblue'
+
+    let anotherdiv = document.createElement('div')
+    anotherdiv.className = 'helloG'
+    anotherdiv.appendChild(document.createTextNode('Hello my name is Nitesh'))
+    document.body.appendChild(anotherdiv)
+
+    function addAge(age){
+        let para = document.createElement('div')
+         para.appendChild(document.createTextNode(`my age is ${age}`))
+         document.querySelector('.helloG').appendChild(para)
+    }
+    addAge(21)
+    addAge(23)
+    addAge(300)
+
+    let para1 = para.children[2]
+    let newElement = addAge(50)
+
+    para1.replaceWith(newElement)
+
+    
+
+
+
+</script>
+</html>

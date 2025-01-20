@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<br>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai or code</title>
+    <button id="stop">stop</button>
+    <div class="demo"></div></br>
+    <button id="start">start interval</button>
+    <button id="stop1">stop interval</button>
+</head>
+<body>
+</body>
+<script>
+    // setTimeout((delay) => console.log('nitesh'),5000 )
+
+   // setTimeout(function, delay, arg1, arg2, ...);
+
+    let timedelay = setTimeout(myFunction,5000)
+    let h1 = document.querySelector('.demo')
+    h1.style.color = 'blue'
+
+    function myFunction(){
+      h1.textContent = 'Abraa ka dabra chu manter '
+    }
+
+    let h2 = document.querySelector('#stop')
+
+    h2.addEventListener('click', function(){
+        clearTimeout(timedelay)
+        console.log('event stopped')
+    })
+
+
+
+     let start = document.querySelector('#start')
+        let interval1
+     start.addEventListener('click',function(){
+         interval1 = setInterval(fugi,3000)
+       function fugi(){
+          console.log('my name is nitesh')
+       }
+        console.log('interval started')
+     })
+
+     
+
+     let stop = document.querySelector('#stop1')
+     stop.addEventListener('click',function(){
+        clearInterval(interval1)
+        console.log('interval got stopped')
+        interval1 = null;
+     })
+
+
+
+</script>
+</html>
