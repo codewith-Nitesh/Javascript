@@ -1,4 +1,1 @@
-
-            // function acquire(){
-            //     console.log(anotherUser)
-            // }
+console.log(outerVar);
