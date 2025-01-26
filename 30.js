@@ -101,3 +101,39 @@ const getFullName = person.fullName.bind(anotherPerson);
 
 // Call the new function
 console.log(getFullName()); 
+
+let obj = {
+    name:'Nitesh',
+    surname:'Choudhary',
+
+    fullname : function () {
+         return(`hello my name is ${this.name} and my surname is ${this.surname}`)
+    }
+}
+
+console.log(obj.fullname())
+
+
+let globalVar = "I'm global";
+
+let outer = function() {
+    let outerVar = "I'm from outer";
+
+    function inner() {
+        let innerVar = "I'm from inner";
+
+        console.log(globalVar);  // Accessible
+        console.log(outerVar);   // Accessible
+        console.log(innerVar);   // Accessible
+    }
+
+    // console.log(outerVar);
+}
+
+outer();
+
+console.error('me hu dalal')
+console.table([{ name: "Nitesh", age: 25 }, { name: "John", age: 30, size:'32' }]);
+console.warn("This is a warning!");
+console.info("This is some info.");
+

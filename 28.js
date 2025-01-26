@@ -43,9 +43,6 @@ const person2 = {
 console.log(person1.greet.call(person2, 'hello'));
 
 
-
-
-
 // const person1 = {
 //     firstName: "Nitesh",
 //     lastName: "Sharma",
