@@ -16,7 +16,7 @@ promiseOne.then(function(message){
 
 
 const otherPromise = new Promise((resolve, reject) =>{
-    let success = false;
+    let success = true;
     if(!success){
         resolve('Operation is successful')
     } else{
