@@ -40,7 +40,7 @@ consumePromiseFive()
 
 // getAllusers()
 
-fetch('https://api.github.com/users/Nitesh0677')
+fetch('https://api.github.com/users/codewith-Nitesh')
 .then(function(response){
     return response.json()
 })
@@ -55,4 +55,8 @@ fetch('https://api.github.com/users/Nitesh0677')
 .finally(function(){
     console.log('data fetched successfully')
 })
+
+
+
+
 

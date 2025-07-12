@@ -40,3 +40,14 @@ let funexp = function fun(num)
 }
 console.log(funexp(9))
 
+let fetch1 = fetch('https://api.github.com/users/codewith-Nitesh')
+fetch1
+.then((encrypData)=>{
+    return encrypData.json()
+})
+.then((data)=>{
+    console.table([data.type,data.id,data.name])
+})
+.catch((error)=>{
+    console.log(error.message)
+})

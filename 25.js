@@ -53,16 +53,19 @@ async function handlePromise() {
 handlePromise()
 
 
-let fetch1 = fetch('https://api.github.com/users/Nitesh0677')
+let fetch1 = fetch('https://api.github.com/users/codewith-Nitesh')
 
 async function fetching(){
     try {
         let response  = await fetch1
         let data = await response.json()
-        console.log(data)
+        console.log('username:',data.login)
+        console.log('id:',data.id)
+        console.log('type:',data.type)
     } catch (error) {
         console.log(error)
     }
 }
 
 fetching()
+

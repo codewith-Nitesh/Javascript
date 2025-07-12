@@ -93,3 +93,14 @@ console.log(jgha)
 //     price:999
 // }
 
+const magic = () =>{
+    console.log('Nitesh')
+};
+
+
+function sum(x, y, z) {
+  return x + y + z;
+}
+
+let nums = [10, 20, 30];
+console.log(sum(...nums)); // 60

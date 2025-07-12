@@ -155,3 +155,6 @@ do{
     console.log(age)
     age++
 }while(age<=10)
+
+
+    

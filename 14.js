@@ -123,3 +123,56 @@ if(true){
 // console.log(b)
 console.log(c)
 console.log(a)
+
+
+let obj = {
+    name:'Nitesh',
+    age:21,
+    location:'Chandigarh'
+}
+
+let {name, location} = obj
+
+console.log(location)
+
+
+// Array destructuring
+
+let arraa = ['nitesh', 'Vikas','Nishant','Biki']
+
+let [firstName , secondName ,thirdName] = arraa
+
+console.log(firstName, ',', thirdName)
+
+// const arrList = useState(0)
+
+// const count = arrList[0]
+// const setCount = arrList[1]
+
+async function nitu(){
+    try{
+        let var1 = await fetch('https://api.github.com/users/codewith-Nitesh')
+        let var2 = await var1.json()
+        console.log(var2.id , var2.name)
+    } 
+    catch(error){
+        console.log('error', error.message)
+    }
+}
+
+nitu()
+
+
+async function getData() {
+    setTimeout(async () => {
+      try {
+        let data = await fetch("https://api.github.com/users/sahil");
+        let res = await data.json();
+        console.table([res.name, res.followers, res.company]);
+      } catch (err) {
+        console.log("error:", err);
+      }
+    }, 1000);
+  }
+  
+  getData();
