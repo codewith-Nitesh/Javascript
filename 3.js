@@ -124,5 +124,35 @@ let myFun = () =>{
         antFun()
     }
     antFun1()
+    console.log('jug jug jio')
 }
 myFun()
+
+let myArr1 = [10,20,30,40,50,60]
+let dusraArr = myArr1.push(0)
+let tisraArr = dusraArr
+console.log(tisraArr)
+console.log(dusraArr)
+console.log(myArr1)
+console.log(myArr.push(70, 30, 40))
+
+
+
+let Arr1 = [10,20,30,40,50,60]
+Arr1.push(70)
+console.log(Arr1)
+Arr1.pop(60)
+console.log(Arr1)
+
+
+let priArr = [10,20,30,40,50]
+let finArr = priArr.pop()
+console.log(priArr)
+console.log(finArr)
+let preFinArr = priArr.push('Nitesh')
+console.log(priArr)
+
+let shiftArr = ['Vikas', 'Suryaptura', 'Arjun', 'Karn']
+let anthArr = shiftArr.unshift('Mohan')
+console.log(shiftArr)
+console.log(anthArr)
