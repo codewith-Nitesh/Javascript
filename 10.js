@@ -55,3 +55,77 @@ console.log(newArr)
 
 
 
+// optional chaining 
+
+  let myNewObj = {
+    firstObj: {
+        name:'Nitesh',
+        age:22
+    },
+  secondObj:  {
+        name:'Vishal',
+        age:26
+    },
+   thirdObj: {
+        name:'Nishant',
+        age:22,
+        address:'Vill Byas P.O kotri Byas Tehsil Paonta Sahib '
+    }
+  }
+
+  let finalObj = myNewObj.thirdObj?.age
+  console.log(finalObj)
+
+  let antFinalObj = myNewObj.secondObj.address
+  console.log(antFinalObj)
+
+  let ArrObj = [
+    {
+      name:'Nitesh',
+      uid:'22BCT10006'
+    },
+    {
+      name:'Nitin',
+      uid:'22BCT10063'
+    }
+  ]
+
+ let finObj =  ArrObj.map((items)=>{
+    return items.uid
+  })
+
+  console.log(finObj)
+
+  let myFunction = async () =>{
+    try {
+      let myApi = await fetch('https://api.github.com/users/diyaa2554');
+      let antApi = await myApi.json()
+      console.table([antApi.login,antApi.id,antApi.name,antApi.company])
+    } catch (error) {
+      console.log(error.message, 'this is wrong')
+    }
+  }
+
+  myFunction()
+
+  let n = 5
+  let temp = n
+  console.log(--temp)
+  console.log(n)
+
+  let myNewObj1 = {
+    chilA :{
+      name:'Nitesh',
+      age:22
+    },
+   childB:  {
+    name:'Nishant',
+    age:22
+    },
+    childC:{
+      name:'Vishal',
+      age:25
+    }
+  }
+
+console.log(myNewObj1.childB?.name)

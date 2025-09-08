@@ -56,6 +56,12 @@ console.log(array1.sort())
 
 
 
+let myNewArr = ['Nitesh','Nishant']
+let antArr = ['Vishal']
+let thirdArr = [...myNewArr,...antArr,'Ajit']
 
+console.log(thirdArr)
 
-
+let filtermethod = ['Nitesh', 'Akkash', 'Vikas', 'Nishant', 'Harsh', 'Meghna']
+console.log(filtermethod.filter((name) => name.startsWith('N')))
+console.log(filtermethod.filter((name) => name.endsWith('sh')))

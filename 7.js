@@ -147,3 +147,69 @@ console.log(allValueAdd)
 
 let per1Name = 'Nitesh';
 console.log(per1Name.length)
+
+
+const myName = 'Nitesh'
+console.log(myName.charAt(3))
+
+
+let mySurname = 'Bhedhawa'
+console.log(mySurname.slice(1,2))
+console.log(mySurname)
+
+
+let myData = () =>({
+  name:'Nitesh',
+  class:12,
+  address:'vill bias, p.o kotri byas district sirmaur tehsil Paonta Sahib'
+})
+
+const myFun = (state) =>{
+  console.log(state,"hy this is me")
+}
+
+console.log(myData(myFun(myData())))
+
+
+let ArrObj = [
+  {
+    name:'Nitesh',
+    age:21
+  },
+  {
+    name:'Nishant',
+    age:22
+  },
+  {
+    name:'Vishal',
+    age:26
+  },
+  {
+    name:'Krishna',
+    age:30
+  }
+]
+
+let antArrObj = ArrObj.map((items,index) =>{
+  return items.age
+})
+
+console.log(antArrObj)
+console.log(ArrObj[1])
+
+
+let person = ()=>{
+  return 24+24
+}
+
+let aObj = [
+  {
+    add : person()
+  }
+]
+
+let aaObj = aObj.map((items) => {
+  return items.add
+})
+
+console.log(aaObj)
