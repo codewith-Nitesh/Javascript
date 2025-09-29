@@ -19,3 +19,10 @@ console.table([account_Id, accountEmail,accountPassword,unique_Id,accountState])
 
 console.log('nitesh')
 
+let a = 10
+let b = "20"
+let c = "Nitesh"
+
+console.log(a+b+c)
+console.log(typeof c)
+console.log(typeof a)

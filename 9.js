@@ -36,8 +36,3 @@ console.log(newCreatedDate.toLocaleString('default', {
          month: "long",
          day:"numeric"
 }))
-
-
-
-
- 
